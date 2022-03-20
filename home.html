@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Mandy Wu
+  Date: January 26, 2022
+  Section: CSE 154 AH
+  TA: Shriya Kurpad
+
+  This is the index.html file, which provides structure for the home page of my personal website.
+  It consists of the head with the page's metadata, and in the body there is a header with the links
+  to other pages, a main that stores my introduction, the classes I'm taking at UW, and projects I
+  am working on.
+-->
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mandy Wu</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Open+Sans:wght@300&display=swap"
+    rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1><a id="name" href="index.html">Mandy Wu</a></h1>
+      <section>
+        <a href="about.html">About</a>
+        <a href="https://drive.google.com/file/d/1YRyivFuvmzR-TFSFRWLO9oOx8VDKYG2v/view?usp=sharing">
+          Resume</a>
+        <a>Contact</a>
+      </section>
+    </header>
+
+    <hr>
+
+    <main>
+
+      <section id="intro">
+        <img id="profilepic" src="img/me.jpg" alt="Drawn photo of myself">
+        <section>
+          <h2>Hello, I'm Mandy.</h2>
+          <p>Student @ University of Washington </p>
+        </section>
+      </section>
+
+      <article>
+        <h3>Classes @ UW:</h3>
+        <p>Click on the class to learn more!</p>
+        <section id="classes">
+          <button>CSE 142</button>
+          <button>CHEM 142</button>
+          <button>MATH 125</button>
+          <button>HCDE 210</button>
+          <button>ENGR 101</button>
+          <button>GEN ST 199</button>
+          <button>ENGL 182</button>
+          <button>MATH 126</button>
+          <button>CSE 154</button>
+        </section>
+        <p id="class-descr" class="hide"></p>
+        <button id="close-class-button" class="hide">✖️ Collapse Description</button>
+      </article>
+
+      <article>
+        <h3>Projects:</h3>
+        <p>Hover mouse over the project name to learn more!</p>
+
+        <section id="projects">
+
+          <section>
+            <h4>SWE Hacks '22</h4>
+            <p class="hide">
+              Currently, I am working on the advertisement and branding assets for UW SWE's 2022
+              Hackathon. This includes making an event logo, banners, social media posts, and
+              more. All illustrations were made via Sketchbook and designs are made via Figma.
+              Some creations are in collaboration w/ the SWE Hacks '22 PR team.
+            </p>
+          </section>
+
+          <section>
+            <h4>Birdie</h4>
+            <p class="hide">
+              Birdie is a personal blog that my friend and I started over the summer. The site
+              was made on SquareSpace and all the contents were c-created by my friend and I.
+              In this project, I learned about site design, search engine optimization, and also
+              managing social media for branding purposes.
+            </p>
+          </section>
+
+          <section>
+            <h4>Chicken Tracker</h4>
+            <p class="hide">
+              Chicken Tracker is a prototyping assignment that was created in my HCDE210
+              class during the Au21 quarter. The assignment involved lofi-prototyping with
+              sketches, then wireframing the flow of the different pages, and lastly hi-fi
+              prototyping in Figma. I learned to use Figma during this project, and also
+              explored different UI elements.
+            </p>
+          </section>
+
+          <section>
+            <h4>BUZZStop98040</h4>
+            <p class="hide">
+              BUZZStop98040 is a bi-partisan news blog serving the community of Mercer
+              Island, Washington. This was created via WIX and I played around with the
+              different layouts and configurations of the site.
+            </p>
+          </section>
+
+        </section>
+
+      </article>
+
+    </main>
+
+  </body>
+
+</html>

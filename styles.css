@@ -1,0 +1,187 @@
+/*
+Name: Mandy Wu
+Date: January 26, 2022
+Section: CSE 154 AH
+TA: Shriya Kurpad
+
+This is the styles.css file, which serves as the stylesheet for all the HTML files that make up
+my personal website. This stylesheet has rulesets that uses a flexbox and its properties to organize
+the layout of my website. It also styles the site to have a minimal, black and white color scheme,
+with geometric lines and shapes here and there. It also has rulesets that are used in the JavaScript
+file, which allows the appearance of the site to change upon interacting with it.
+*/
+
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover, #name, .black {
+  color: black;
+}
+
+#name {
+  font-size: 16pt;
+  text-transform: uppercase;
+}
+
+header {
+  height: 60px;
+  justify-content: space-between;
+}
+
+hr {
+  border-top: 2px black solid;
+}
+
+h2, h3 {
+  font-family: 'Inconsolata', monospace;
+}
+
+h2 {
+  font-size: 48pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20pt;
+  margin-bottom: 0px;
+}
+
+h4, #classes button {
+  font-size: 14pt;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+h4 {
+  margin: 0px;
+  width: 330px;
+  text-align: center;
+}
+
+#intro section, #projects > section, #contact {
+  flex-direction: column;
+}
+
+#profilepic {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  margin-right: 70px;
+  padding: 5px;
+  border: black 5px solid;
+}
+
+#classes, #projects {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#projects > section {
+  margin: 25px;
+  height: 300px;
+  width: 350px;
+  border: solid black 3px;
+}
+
+#classes button {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+#projects > section, #classes button {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+#closeClassButton {
+  background-color: white;
+  font-size: 12pt;
+}
+
+header, section {
+  display: flex;
+  align-items: center;
+}
+
+header > section > a {
+  margin: 15px;
+  margin-right: 0px;
+}
+
+#intro {
+  margin: 100px;
+  justify-content: center;
+}
+
+img {
+  height: 500px;
+  padding: 40px;
+}
+
+#intro section {
+  align-items: flex-start;
+}
+
+#gallery {
+  justify-content: space-between;
+  margin: 40px;
+}
+
+#gallery button {
+  background: none;
+  border: none;
+  font-size: 36pt;
+}
+
+main > p:last-child, main > article {
+  margin-bottom: 80px;
+}
+
+#contact {
+  text-align: center;
+  padding: 100px;
+}
+
+.grey {
+  color: lightgray;
+}
+
+.classDes {
+  border-top: black solid 3px;
+  border-bottom: black solid 3px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+}
+
+.projPic {
+  height: 220px;
+  padding: 20px;
+}
+
+#projects p {
+  padding: 15px;
+}

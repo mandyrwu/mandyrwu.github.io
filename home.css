@@ -1,0 +1,212 @@
+body {
+  margin: 0px;
+}
+
+/* Nav Bar */
+header {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  width: 70%;
+  height: 48pt;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+header section {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#name {
+  line-height: 14pt;
+  font-size: 14pt;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px black solid;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+header section > a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: #828282;
+}
+
+a:hover, #name, .black {
+  color: black;
+}
+
+/* Intro */
+
+#profilepic {
+  height: 25%;
+  width: 25%;
+  border-radius: 50%;
+  margin-right: 75px;
+  padding: 5px;
+  border: black 5px solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#intro {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 48pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 5px solid #8DBDDA;
+  white-space: nowrap;
+  animation:
+    typing 3s steps(20, end) forwards,
+    blink 1s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #8DBDDA; }
+}
+
+/* Projects */
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+}
+
+img {
+  width: 30%;
+  height: 20%;
+  margin-right: 15%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.tags {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  color: #8DBDDA;
+  font-size: 14pt;
+  margin-top: 50px;
+  margin-right: 10%;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project > section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 15%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#intro > section {
+  display: flex;
+  flex-direction: column;
+}
+
+.greybg {
+  background-color: #F1F1F1;
+  width: 100%;
+}
+
+.whitebg {
+  background-color: white;
+}
+
+h3 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 28pt;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 10%;
+}
+
+/* Footer */
+
+footer section {
+  background-color: #8DBDDA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+footer > section > div {
+  background-color: #8DBDDA;
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+  /* height: 40px; */
+}
+
+footer > section > div svg {
+  margin-left: 30px;
+  height: 28px;
+  width: 28px;
+}
+
+#connect {
+  font-family: 'Inconsolata', monospace;
+  font-size: 16pt;
+  font-weight: 700;
+  color: white;
+  margin-left: 15%;
+}
+
+footer > div {
+  background-color: black;
+}
+
+#copyright {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.material-icons {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}

@@ -2,12 +2,6 @@
 
 (function() {
 
-  window.addEventListener('load', init);
-
-  function init() {
-    qs('header section:first-child').classList.add('black');
-  }
-
   /**
    * Helpfer function for accessing an element with their ID
    * @param {String} id - the id for the desired element

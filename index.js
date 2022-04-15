@@ -4,6 +4,9 @@
 
   window.addEventListener('load', init);
 
+  /**
+   * Assign background color
+   */
   function init() {
     let projectArray = qsa('.project');
     for (let i = 0; i < projectArray.length; i++) {
@@ -20,18 +23,18 @@
    * @param {String} id - the id for the desired element
    * @return {Element} element selected by the id
    */
-  function id(id) {
-    return document.getElementById(id);
-  }
+  // function id(id) {
+  //   return document.getElementById(id);
+  // }
 
   /**
    * Helpfer function for selecting an element with their selector
    * @param {String} selector - the CSS selector name for the desired element
    * @return {Element} element selected by the selector
    */
-  function qs(selector) {
-    return document.querySelector(selector);
-  }
+  // function qs(selector) {
+  //   return document.querySelector(selector);
+  // }
 
   /**
    * Helpfer function for selecting all elements with their selector

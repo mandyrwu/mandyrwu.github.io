@@ -2,6 +2,19 @@
 
 (function() {
 
+  window.addEventListener('load', init);
+
+  function init() {
+    let projectArray = qsa('.project');
+    for (let i = 0; i < projectArray.length; i++) {
+      if (i % 2 === 0) {
+        projectArray[i].classList.add('greybg');
+      } else {
+        projectArray[i].classList.add('whitebg');
+      }
+    }
+  }
+
   /**
    * Helpfer function for accessing an element with their ID
    * @param {String} id - the id for the desired element

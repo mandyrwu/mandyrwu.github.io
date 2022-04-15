@@ -210,3 +210,8 @@ footer > div {
 .material-icons.md-36 {
   font-size: 36px;
 }
+
+.overlay {
+  /* background: linear-gradient(to top, #3204fdba, #9907facc); */
+  display: none;
+}

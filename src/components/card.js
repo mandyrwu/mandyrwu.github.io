@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 
 import './card.css'
+import { StaticImage } from 'gatsby-plugin-image'
 
 
 const Card = props => (

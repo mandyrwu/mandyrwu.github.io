@@ -5,116 +5,91 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+import Card from "../components/card"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
+//Photos:
+import Mountaineer from "../components/images/mountaineers.png"
+import buzz from "../components/images/buzzstop.png"
+import handful from "../components/images/handful.png"
+import owl from "../components/images/owlets.png"
+import philo from "../components/images/philo.png"
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
+
+
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '150px',
+        marginBottom: '150px',
+    }}>
+
+
+
       <h1>
-        Hi, I'm Mandy. Welcome!
+        Hi, I'm <b>Mandy</b>
       </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
+      <p className={styles.textCenter}>Human-Centered Design & Engineering Student at the University of Washington. Passionate about creating accessible designs
+        for underrepresented populations in tech.
       </p>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+
+
+
+    <div className="Projects">
+        <Card
+          title="The Mountaineers"
+          text="Reimagining the wild."
+          tags="Brand & Identity | Visual Design"
+          image={Mountaineer}/>
+
+        <Card
+          title="Handful"
+          text="Digital playground created with accessibility and practicality in mind."
+          tags="Hackathon | App Design"
+          link="https://devpost.com/software/handful"
+          image={handful} />
+
+        <Card
+          title="Owlet's"
+          text="Reconnecting elderlies with the post-pandemic world through a
+          healthy and accessible approach."
+          tags="Hackathon | App Design"
+          link="https://devpost.com/software/owlet-s"
+          image={owl} />
+
+        <Card
+          title="Philo Cards"
+          text="Redesigning a brand's website to reflect its identity, present engaging content, and drive sales."
+          tags="Brand & Identity | Website Design"
+          link="../projects/philo"
+          image={philo} />
+
+        <Card
+          title="BUZZStop98040"
+          text="A bi-partisan news outlet for the local Mercer Island community."
+          tags="Website Design"
+          link="https://www.buzzstop98040.com/"
+          image={buzz} />
+
+      <Link
+        to="../projects/philo"
+        style={{
+          fontSize: `var(--font-sm)`,
+          textDecoration: `none`,
+        }}
+      >
+        testing
+      </Link>
+      </div>
+
+
   </Layout>
 )
 

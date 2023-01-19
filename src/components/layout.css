@@ -1,8 +1,8 @@
 :root {
   --border-radius: 4px;
   --color-text: #333;
-  --color-primary: #7026b9;
-  --color-code-bg: #fff4db;
+  --color-primary: #DF145D;
+  --color-code-bg: #f9f9f9;
   --color-code: #8a6534;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -42,6 +42,7 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
+  background-color: var(--color-code-bg);
 }
 a {
   background-color: transparent;
@@ -75,11 +76,33 @@ h1 {
   margin-bottom: 3rem;
   padding: 0;
   line-height: var(--line-height-dense);
-  letter-spacing: -0.01em;
+  letter-spacing: 110%;
+  font-size: 72px;
 }
 h1 > b {
   color: var(--color-primary);
 }
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  line-height: var(--line-height-dense);
+  letter-spacing: 110%;
+  font-size: 48px;
+  color: var(--color-primary);
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  line-height: var(--line-height-dense);
+  letter-spacing: 110%;
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
 img {
   border-style: none;
   max-width: 100%;
@@ -222,3 +245,82 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+
+/* Header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+Footer {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+} */
+
+button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.wrapper {
+  height: var(--line-height-dense);
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  height: var(--line-height-dense);
+
+  width: 100%;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+.typing-demo h2 {
+  margin-bottom: 0px;
+  font-family: var(--font-mono);
+  font-weight: 400;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1040px) {
+  .Projects {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+/* INTO effects */

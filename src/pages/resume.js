@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import Resume from  "./images/resume.png"
-import ResumeDownload from "./images/resume.pdf"
+import Resume from  "../images/resume.png"
+import ResumeDownload from "../images/resume.pdf"
 
 
 const ResumePage = () => (

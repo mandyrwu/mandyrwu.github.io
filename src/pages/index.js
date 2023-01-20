@@ -8,11 +8,11 @@ import * as styles from "../components/index.module.css"
 import Card from "../components/card"
 
 //Photos:
-import Mountaineer from "./images/mountaineers.png"
-import buzz from "./images/buzzstop.png"
-import handful from "./images/handful.png"
-import owl from "./images/owlets.png"
-import philo from "./images/philo.png"
+import Mountaineer from "../images/mountaineers.png"
+import buzz from "../images/buzzstop.png"
+import handful from "../images/handful.png"
+import owl from "../images/owlets.png"
+import philo from "../images/philo.png"
 
 
 
